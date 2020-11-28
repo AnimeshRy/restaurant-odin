@@ -4,6 +4,7 @@ import { about } from "./modules/about.js";
 import { reservations } from "./modules/reservations.js";
 import { destroy } from "./modules/destroy.js";
 import { fade } from "./modules/fade.js";
+import "./main.css";
 
 let logo = document.querySelector(".logo");
 let aboutButton = document.querySelector("#about-link");
