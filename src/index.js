@@ -49,18 +49,18 @@ menuButton.addEventListener("click", (e) => {
 });
 
 contactButton.addEventListener("click", (e) => {
-  fade();
-  setTimeout(destroy, 700);
-  setTimeout(reservations, 700);
-  setTimeout(fade, 700);
-  setRemoveActive(e.target);
+    fade();
+    setTimeout(destroy, 700);
+    setTimeout(reservations, 700);
+    setTimeout(fade, 700);
+    setRemoveActive(e.target);
 });
 
 logo.addEventListener("click", (e) => {
-  setTimeout(destroy, 700);
-  setTimeout(landing, 700);
-  setTimeout(fade, 700);
-  setRemoveActive(e);
+    setTimeout(destroy, 700);
+    setTimeout(landing, 700);
+    setTimeout(fade, 700);
+    setRemoveActive(e);
 });
 
 landing();
