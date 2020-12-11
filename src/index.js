@@ -6,6 +6,7 @@ import { destroy } from "./modules/destroy.js";
 import { fade } from "./modules/fade.js";
 import "./main.css";
 
+
 let logo = document.querySelector(".logo");
 let aboutButton = document.querySelector("#about-link");
 let menuButton = document.querySelector("#menu-link");
