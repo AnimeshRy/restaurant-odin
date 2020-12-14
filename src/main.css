@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;600;700&family=Playfair+Display:ital,wght@1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fade {
+    opacity: 0;
+    transition: none;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.7s opacity ease-in;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5%;
+    background-color: black;
+    color: white;
+
+}
+
+#footer a {
+    display: inline-block;
+    padding-left: 50%;
+}
+
+#footer li:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+    font-size: 1.25rem;
+    background-color: black;
+    border-bottom: 2px solid red;
+    padding-bottom: 0;
+
+}
+
+.main-nav {
+    display: inherit;
+    list-style-type: none;
+    margin: 0 2rem;
+    justify-content: space-between;
+}
+
+.main-nav li {
+    /* text-align: center; */
+    margin: 1rem auto;
+}
+
+.nav-links {
+    margin-left: 2.5rem;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 1.75rem;
+    margin-top: .75rem;
+    margin-left: 1.25rem;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    padding: 2rem 1.25rem;
+}
+
+.nav-links:hover {
+    color: rgba(255, 255, 255, 0.527);
+    cursor: pointer;
+}
+
+.active {
+    font-size: 1.5rem;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* LANDING */
+
+.landing-image {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.landing-logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    margin-left: -10rem;
+    margin-top: -9rem;
+    border: 3px yellow solid;
+    color: white;
+    background-color: RGBA(0, 0, 0, 0.4);
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09),
+        0 4px 2px rgba(0, 0, 0, 0.09),
+        0 8px 4px rgba(0, 0, 0, 0.09),
+        0 16px 8px rgba(0, 0, 0, 0.09),
+        0 32px 16px rgba(0, 0, 0, 0.09);
+}
+
+.landing-logo {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* ABOUT */
+
+.about {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-top: 30px;
+    padding-bottom: 75px;
+}
+
+.about img {
+    width: 80%;
+}
+
+.about h1 {
+    text-align: left;
+    width: 40%;
+    border-bottom: 2px solid red;
+    margin-top: 2rem;
+}
+
+.about p {
+    text-align: left;
+    margin-top: 1rem;
+    line-height: 1.25rem;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-bottom: 5%;
+}
+
+.menu-description {
+    text-align: center;
+    font-weight: 300;
+    margin: 30px 15% 2rem;
+    font-size: 1.25rem;
+    width: 40%;
+}
+
+.menu-header {
+    font-family: 'Playfair Display', serif;
+    padding: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.menu-top {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid black;
+}
+
+.menu-plate-header,
+.menu-price-header {
+    font-size: 1rem;
+    margin-top: .5rem;
+    color: RGBA(0, 0, 0, 0.5);
+}
+
+.menu-price-header {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.menu-item p:nth-child(even) {
+    font-family: 'Playfair Display', serif;
+    justify-self: flex-end;
+}
+
+.dollar-sign {
+    font-size: .75rem;
+    vertical-align: 5%;
+}
+
+/* RESERVATIONS */
+
+.reservations {
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.reservations h2 {
+    display: inline;
+    font-size: 1.75rem;
+}
+
+.reservations h2,
+.reservations-link {
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+}
+
+.small-header {
+    line-height: 1rem;
+}
+
+.small-bold {
+    font-weight: 600;
+}
+
+.phone-text {
+    padding-top: 1.25rem;
+}
+
+.phone-number {
+    line-height: 3rem;
+    font-size: 1.25rem;
+}
+
+.reservations p {
+    margin: 0 25%;
+}
+
+.reservations-link {
+    font-size: 1.1rem;
+    line-height: 4rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        font-size: 1.25rem;
+        margin-right: 0;
+    }
+
+    .navbar {
+        font-size: .75rem;
+    }
+
+    .active {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        margin-left: 0;
+        padding: .5rem;
+    }
+
+    #footer {
+        justify-content: center;
+    }
+
+    #footer li {
+        padding-left: 2rem;
+    }
+
+    /* ABOUT */
+
+    .about {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .about h1,
+    .about p {
+        padding-left: 1rem;
+    }
+
+    .about h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* MENU */
+
+    .menu {
+        width: 80%;
+    }
+
+    .menu-image {
+        width: 100%;
+    }
+
+    .menu-description {
+        display: none;
+    }
+}
