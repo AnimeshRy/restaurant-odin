@@ -12,7 +12,7 @@ const about = () => {
     about.appendChild(h1);
 
     para.textContent =
-        "Heirloom fam venmo copper mug offal vape selfies small batch lomo. Post-ironic lo-fi quinoa shabby chic single-origin coffee. Bitters man bun you probably haven't heard of them wayfarers, heirloom roof party flexitarian. Forage sriracha distillery mumblecore microdosing vinyl palo santo lo-fi iceland before they sold out lomo hella hashtag. Austin edison bulb cold-pressed activated charcoal pabst typewriter.";
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, necessitatibus veritatis? Praesentium voluptatum autem necessitatibus perferendis. Nobis animi, esse quae illum labore molestiae impedit hic accusamus est dolor veniam vel unde, explicabo autem eligendi similique asperiores sunt quidem sit voluptatibus aperiam in excepturi perferendis. Voluptas alias dolorem libero optio nesciunt!";
     about.appendChild(para);
 
     about.classList.add("about");

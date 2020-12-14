@@ -72,13 +72,14 @@ a {
 }
 
 .main-nav {
-    display: flex;
+    display: inherit;
     list-style-type: none;
     margin: 0 2rem;
+    justify-content: space-between;
 }
 
 .main-nav li {
-    text-align: center;
+    /* text-align: center; */
     margin: 1rem auto;
 }
 
@@ -169,7 +170,7 @@ a {
 }
 
 .about img {
-    width: 100%;
+    width: 80%;
 }
 
 .about h1 {

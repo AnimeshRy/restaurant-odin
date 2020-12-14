@@ -21,8 +21,10 @@ let stickyNav = () => {
     let sticky = navbar.offsetTop;
 
     if (window.pageYOffset > sticky) {
+        document.body.style.paddingTop = sticky + 'px';
         navbar.classList.add("sticky");
     } else {
+        document.body.style.paddingTop = 0;
         navbar.classList.remove("sticky");
     }
 };
